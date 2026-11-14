@@ -27,13 +27,6 @@ int main(int argc, char* argv[]) {
     } else {
         printf("\nRUTUBE session closed.\n");
     }
-
-    while (appletMainLoop()) {
-        hidScanInput();
-        if (hidKeysDown(CONTROLLER_P1_AUTO) & KEY_PLUS) break;
-        consoleUpdate(NULL);
-    }
-
     consoleExit(NULL);
     return 0;
 }

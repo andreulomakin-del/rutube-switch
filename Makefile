@@ -97,7 +97,6 @@ $(OFILES_SRC): $(HFILES_BIN)
 	@echo $(notdir $<)
 	@$(bin2o)
 
--include $(DEPEND
-S)
+-include $(DEPENDS)
 
 endif
